@@ -51,6 +51,9 @@ not(x or y) == not x and not y
 
 not(x and y) == not x or not y
 '''
+
+#president test
+'''
 print("I Can't be President?!")
 age = input("Enter your age: ")
 us_residual_length = input("Enter how long you've lived in the us: ")
@@ -62,3 +65,28 @@ if int(age) > 35 and int(us_residual_length) >= 14 and natural_born == 'Y':
 else:
     print(True)
     print("You are not allowed to be president")
+'''
+#roller coaster check
+'''
+print("Can I ride the roller coaster?")
+height = input("How tall are you in inches? ")
+age = input("How old are you? ")
+num_of_quarters = input("How many quarters do you have? ")
+freq_rider_pass = input("Do you have the frequent rider pass? (Y/N) ")
+
+if int(height) > 50 or int(age) >= 18:
+    if freq_rider_pass == "Y":
+        if int(num_of_quarters) >= 2:
+            print(True)
+        if int(num_of_quarters) < 2:
+            print(False)
+    if freq_rider_pass == "N":
+        if int(num_of_quarters) >= 4:
+            print(True)
+else:
+    print(False)
+'''
+#DeMorgan's law thing
+'''
+According to DeMorgan's law, not(x or y) == not x and not y and not(x and y) == not x or not y are both equal. Idk why I don't know calculus but it said so on the website.
+'''
