@@ -62,7 +62,7 @@ x = int(input("what is x? "))
 y = int(input("what is y? "))
 z = int(input("what is z? "))
 if x + y > z and x + z > y and y + z > x:
-    print("perimiter of the triangle is " + str(x + y + z))
+    print("perimeter of the triangle is " + str(x + y + z))
     if(x ** 2 + y ** 2 == z ** 2):
         print("this is a right triangle")
     if(x == y and y == z):
