@@ -57,14 +57,14 @@ Translate this Snap! program into a Python program
 ***Refer to the image provided on Moodle located below the Lab 2.03 link***
 Write program below:
 '''
-'''
+
 x = int(input("what is x? "))
 y = int(input("what is y? "))
 z = int(input("what is z? "))
 if x + y > z and x + z > y and y + z > x:
     print("perimiter of the triangle is " + str(x + y + z))
-if(x * x + y * y == z * z):
-    print("this is a right triangle")
+    if(x ** 2 + y ** 2 == z ** 2):
+        print("this is a right triangle")
     if(x == y and y == z):
         print("this is an equillateral triangle")
     elif(z == x or z == y or x == y):
@@ -73,7 +73,9 @@ if(x * x + y * y == z * z):
         print("this is a scalene triangle")
 else:
     print("not a triangle")
-'''
+
+
+
 '''
 ---------------------------------------
 Create a game show program
@@ -82,6 +84,7 @@ Declare 10 prizes (prize1, prize2, prize 3 at the top of your file)
 User picks a number
 The prize corresponding with that door is printed for the user.
 Write code below the multiline comment
+'''
 '''
 prize1 = "BMW"
 prize2 = "apple"
@@ -115,3 +118,4 @@ elif user_prize == 9:
     print(prize9)
 else:
     print(prize10)
+'''
