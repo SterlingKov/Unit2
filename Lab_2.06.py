@@ -54,16 +54,31 @@ You will not need to determine the winner at this point.
 '''
 TTTboard = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 turnNum = 0
-while turnNum < 10:
+square = ''
+while turnNum < 9:
+    
     print("Tic Tac Toe Board")
     print(f"{TTTboard[0]} | {TTTboard[1]} | {TTTboard[2]} \n --------- \n{TTTboard[3]} | {TTTboard[4]} | {TTTboard[5]} \n---------- \n{TTTboard[6]} | {TTTboard[7]} | {TTTboard[8]}")
-
     square = int(input("Which square would you like to choose?: "))
     while TTTboard[square - 1] == 'X' or TTTboard[square - 1] == 'O':
         square = int(input("Which square would you like to choose?: "))
-    if turnNum == 0 or 2 or 4 or 6 or 8:
+    if turnNum == 0:
         TTTboard[square - 1] = 'X'
-    else:
+    elif turnNum == 1:
         TTTboard[square - 1] = 'O'
+    elif turnNum == 2:
+        TTTboard[square - 1] = 'X'
+    elif turnNum == 3:
+        TTTboard[square - 1] = 'O'
+    elif turnNum == 4:
+        TTTboard[square - 1] = 'X'
+    elif turnNum == 5:
+        TTTboard[square - 1] = 'O'
+    elif turnNum == 6:
+        TTTboard[square - 1] = 'X'
+    elif turnNum == 7:
+        TTTboard[square - 1] = 'O'
+    elif turnNum == 8:
+        TTTboard[square - 1] = 'X'
     print(f"{TTTboard[0]} | {TTTboard[1]} | {TTTboard[2]} \n --------- \n{TTTboard[3]} | {TTTboard[4]} | {TTTboard[5]} \n---------- \n{TTTboard[6]} | {TTTboard[7]} | {TTTboard[8]}")
     turnNum = turnNum + 1
