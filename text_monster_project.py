@@ -18,7 +18,7 @@ inventory = []
 
 
 while True:
-    move_finished = True
+    
     print(f"you are located in: {location}")
     move_input = input("What would you like to do? -left- -right- -up- -down- -fight- -run- -grab- -inventory- -help- ")
 
@@ -100,14 +100,16 @@ while True:
             print("Enter a valid input")
 
     elif move_input == 'grab':
-        if location == 'sword':
+        if location == 'sword' and len(inventory) < 4:
             inventory.append('sword')
             location = 'empty'
             dungeon[current_floor][current_room] = 'empty'
-        elif location == 'magic stone':
+        elif location == 'magic stone' and len(inventory) < 4:
             inventory.append('magic stone')
             location = 'empty'
             dungeon[current_floor][current_room] = 'empty'
+        elif len(inventory) > 3:
+            print("You cannot hold any more items")
         else:
             print('There is nothing to grab')
 
